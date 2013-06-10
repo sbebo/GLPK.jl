@@ -47,7 +47,6 @@ function build()
                     String["--with-gmp", "--enable-dl"], # config opts
                     glpkname, # directory name
                     glpkname, # directory
-                    #joinpath("builds", glpkname, "src", ".lib", "libglpk.la"), # libname
                     joinpath("src", ".libs", "libglpk.la"), # libname
                     "libglpk.la") # installed_libname
         end

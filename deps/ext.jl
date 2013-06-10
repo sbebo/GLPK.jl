@@ -29,7 +29,7 @@ let
         end
         dl = dlopen_e(system_libname)
         if dl != C_NULL
-            realod(system_versiontest_script)
+            reload(system_versiontest_script)
             system_glpkvers = readchomp(vers_file)
             rm(vers_file)
             if system_glpkvers != glpkvers
